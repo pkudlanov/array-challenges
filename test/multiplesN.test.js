@@ -6,4 +6,10 @@ describe('test multiples of n function', () => {
         const result = multiplesN(num);
         expect(result).toEqual(expect.any(Array));
     });
+
+    it('returns array with the numbers multiples', () => {
+        const num = 25;
+        const result = multiplesN(num);
+        expect(result).toEqual([25, 50, 75, 100]);
+    });
 });

@@ -12,4 +12,10 @@ describe('test multiples of n function', () => {
         const result = multiplesN(num);
         expect(result).toEqual([25, 50, 75, 100]);
     });
+
+    it('array is empty if number passed is greater then 100', () => {
+        const num = 1111;
+        const result = multiplesN(num);
+        expect(result.length).toEqual(0);
+    });
 });

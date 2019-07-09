@@ -18,4 +18,16 @@ describe('test findMissingNum function', () => {
         const result = findMissingNum(arr, 9, 1);
         expect(result).toEqual(8);
     });
+
+    it('returns the number thats missing from another array', () => {
+        const arr = [5, 4, 9, 10, 6, 8, 3, 7];
+        const result = findMissingNum(arr, 11, 3);
+        expect(result).toEqual(11);
+    });
+
+    it('returns the number thats missing from another array', () => {
+        const arr = [5, 4, 9, 10, 6, 11, 8, 7];
+        const result = findMissingNum(arr, 11, 3);
+        expect(result).toEqual(3);
+    });
 });

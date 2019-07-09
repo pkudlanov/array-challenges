@@ -18,4 +18,10 @@ describe('test largest product function', () => {
         const result = largestProduct(arr);
         expect(result).toEqual(arr[0]);
     });
+
+    it('removes 0 from array if length is greater then 1', () => {
+        const arr = [12, 325, 2, 2, 0, 134, 1];
+        const result = largestProduct(arr);
+        expect(result).not.toContain(0);
+    });
 });

@@ -24,4 +24,10 @@ describe('test largest product function', () => {
         const result = largestProduct(arr);
         expect(result).not.toContain(0);
     });
+
+    it('if odd number of negative numbers removes greatest one', () => {
+        const arr = [-3, -2, -1];
+        const result = largestProduct(arr);
+        expect(result).toEqual(6);
+    });
 });

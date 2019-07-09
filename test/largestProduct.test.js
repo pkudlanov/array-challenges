@@ -30,4 +30,10 @@ describe('test largest product function', () => {
         const result = largestProduct(arr);
         expect(result).toEqual(6);
     });
+
+    it('multiplies all the numbers in the final array', () => {
+        const arr = [3, 32, 3, 2, 0, -2, 8, -3.323, -11];
+        const result = largestProduct(arr);
+        expect(result).toEqual(168436.224);
+    });
 });
